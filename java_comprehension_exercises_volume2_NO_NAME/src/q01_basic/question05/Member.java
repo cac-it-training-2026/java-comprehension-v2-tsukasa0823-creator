@@ -1,12 +1,30 @@
-package q01_basic.question04;
+package q01_basic.question05;
 
-class Member {
-	//TODO ここから実装する
+public class Member extends AbstMember {
 	private int id;
 	private String password;
-	private String name;
 	private int age;
 	private int rank;
+
+	/**
+	 * @param id
+	 * @param password
+	 * @param age
+	 * @param rank
+	 */
+	public Member(int id, String password, String name, int age, int rank) {
+		super.name = name;
+		this.id = id;
+		this.password = password;
+		this.age = age;
+		this.rank = rank;
+	}
+
+	/**
+	 * 
+	 */
+	public Member() {
+	}
 
 	/**
 	 * @return id
@@ -23,27 +41,6 @@ class Member {
 	}
 
 	/**
-	 * @param id
-	 * @param password
-	 * @param name
-	 * @param age
-	 * @param rank
-	 */
-	public Member(int id, String password, String name, int age, int rank) {
-		this.id = id;
-		this.password = password;
-		this.name = name;
-		this.age = age;
-		this.rank = rank;
-	}
-
-	/**
-	 * 
-	 */
-	public Member() {
-	}
-
-	/**
 	 * @return password
 	 */
 	public String getPassword() {
@@ -55,20 +52,6 @@ class Member {
 	 */
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	/**
-	 * @return name
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * @param name セットする name
-	 */
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	/**
@@ -97,6 +80,12 @@ class Member {
 	 */
 	public void setRank(int rank) {
 		this.rank = rank;
+	}
+
+	public void buyItem() {
+		System.out.println("---BUY ITEM--- ");
+		System.out.println(name + " purchased the item at the item at 50% off ");
+
 	}
 
 	public void showMember() {

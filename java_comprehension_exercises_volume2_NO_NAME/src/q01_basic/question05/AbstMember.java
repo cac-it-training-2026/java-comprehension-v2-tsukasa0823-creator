@@ -5,12 +5,13 @@ package q01_basic.question05;
  * Memberクラス、NonMemberクラスに継承する
  * 
  */
+
 abstract class AbstMember {
+	protected String name;
 
 	/**
 	 * name protected access
 	 */
-	protected String name;
 
 	/**
 	 * 商品を購入する（メッセージ出力）
