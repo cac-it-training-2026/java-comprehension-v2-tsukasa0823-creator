@@ -83,13 +83,11 @@ public class Member extends AbstMember {
 	}
 
 	public void buyItem() {
-		System.out.println("---BUY ITEM--- ");
-		System.out.println(name + " purchased the item at the item at 50% off ");
+		System.out.println(name + " purchased the item at 50% off ");
 
 	}
 
 	public void showMember() {
-		System.out.println("---SHOW ALL MEMBERS---");
 		System.out.println("***MEMBER DATA***");
 		System.out.println("id:" + id);
 		System.out.println("password:" + password);

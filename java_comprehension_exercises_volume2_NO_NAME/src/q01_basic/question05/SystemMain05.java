@@ -12,7 +12,7 @@ public class SystemMain05 {
 		members[1] = member;
 		MemberManager.showAllMembers(members);
 		nonMember.buyItem();
-		member.showMember();
+		member.buyItem();
 
 	}
 
